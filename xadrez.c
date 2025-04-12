@@ -18,24 +18,23 @@ return;
          if (casas == 0)
 return;
          
-         for (int j = 0; j < 5; j++){
-            for(int i = 0;i < 5; i++) {
-            printf("Cima\n");}
-            printf("Direita\n");}
-         }
+         for (int j = 0, i = 0; j < 5, i < 5; j++, i++)
+             {
+         printf("Cima\n");
+         printf("Direita\n");
+        }    
+    }    
 
 // funcao recursiva
      void moverTorre(int casas)
-{
+   {
           if (casas == 0)
 return;
 
          for (int i = 0; i < 5; i++) {
-            printf("Direita\n");
+            printf("Direita\n");}
          }
-    }    
-
-
+         
 int main(){
     printf("### Jogo Xadrez ###\n");
     
@@ -52,19 +51,17 @@ int main(){
     moverRainha(casas - 8);
 
     printf("Movimentacao do Cavalo\n");
-
-    for (int j = 0; j < 2; j++) {
-        if (j == 2)
-        break;
-        for (int i = 0; i<1; i++) {
-            if (i ==1)
-            break;
+  {
+    for (int j = 0; j < 2; j++) 
+        if (j < 2)
         printf("Cima\n");
+  
+        for (int i = 0; i < 1; i++) 
+        if (i < 1)
+        break;
         printf("Direita\n");
-        }
-    }
+  }
         
-
     return 0;
 }
 
